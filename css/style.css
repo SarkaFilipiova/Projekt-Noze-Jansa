@@ -1,7 +1,55 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+  
 .header {
   background-image: url("sekacek-tlustoch-uvod.jpg");
-}/*# sourceMappingURL=style.css.map */
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  padding-bottom: 30%;
+}
+
+/*menu*/
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+li a {
+  font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+li a:hover {
+  background-color: #E0E5E9;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-parts {
+  display: flex;
+}
+
+.menu-parts li {
+  padding-left: 10px;
+}
+/*menu*/
+
+
+.icon_pic {
+  width: 30%;
+}
+
+.section_icons {
+  display: flex;
+}
