@@ -17,13 +17,16 @@
                 <img class="logo" src="/images/logo-w.png" alt="logo Nože Jansa">
             </div>
             <div>
-                <nav class="header_menu_parts">
+                <nav class="menu">
+                    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                    <label for="menu-checkbox" class="menu__toggler">☰</label>
+
                     <ul class="menu-parts">
-                        <li class="menu_item"><a href="/" class="hlavni-strana">Hlavní strana</a></li>
-                        <li class="menu_item"><a href="/galerie-nozu" class="galerie-nozu">Galerie nožů</a></li>
-                        <li class="menu_item"><a href="/ma-filozofie" class="ma-filozofie">Má filozofie</a></li>
-                        <li class="menu_item"><a href="/reference" class="reference">Reference</a></li>
-                        <li class="menu_item"><a href="/kontakt" class="kontakt">Kontakt</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/">Hlavní strana</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/galerie-nozu">Galerie nožů</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/ma-filozofie">Má filozofie</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/reference">Reference</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,7 +56,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="box-galery">
         <h2>Galerie nožů</h2>
         <div class="galery">
             <div class="knife-box">

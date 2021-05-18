@@ -1,5 +1,11 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
+/* Color Theme Swatches in Hex */
+.rene--1-hex { color: #172601; }
+.rene--2-hex { color: #456E27; }
+.rene--3-hex { color: #E0E5E9; }
+.rene--4-hex { color: #D4D9DF; }
+.rene--5-hex { color: #432F23; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -9,7 +15,7 @@ body {
   
 .header {
   background-image: url("/images/plachtak-uvod.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-bottom: 30%;
@@ -17,42 +23,67 @@ body {
 
 .header_h {
   color: white;
-  position: absolute;
-  padding-top: 15%;
-  padding-left: 15%;
+  text-shadow: 0 0 4px black;
+  font-size: 10px;
+  padding-left: 2%;
 }
 
 /*menu*/
-li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-li a {
-  font-size: 18px;
-	font-weight: bold;
-	text-decoration: none;
-  color: white;
-}
-
-li a:hover {
-  background-color: #E0E5E9;
-}
-
-.header_menu {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
+.menu__checkbox {
+	position: absolute;
+	left: -99999px;
 }
 
 .menu-parts {
-  display: flex;
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: transparent;
+  text-align: center;
 }
 
-.menu-parts li {
-  padding-left: 10px;
+.menu__toggler {
+  color: white;
+  padding-left: 2%;
+  text-align: right;
+  float: right;
+}
+
+.menu__item {
+	border-bottom: 1px solid white;
+}
+
+.menu__link {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.menu__link:hover {
+	background-color:rgba(228, 214, 214, 0.5);
+  color: white;
+}
+
+.menu__checkbox:checked ~ .menu-parts {
+	display: block;
+}
+
+
+@media screen and (min-width: 800px) {
+	.menu__toggler {
+		display: none;
+	}
+
+	.menu-parts {
+		display:flex !important;
+	}
+
+	.menu__item {
+		border-bottom: 0;
+		border-right: 1px solid white;
+	}
 }
 /*menu*/
 
@@ -63,11 +94,14 @@ li a:hover {
 
 .section_icons {
   display: flex;
-  padding-top: 5%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 10%;
 }
 
 .section_icons p {
   text-align: center;
+  font-size: 10px;
 }
 
 .section_icons img {
@@ -81,6 +115,7 @@ li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding-bottom: 0;
 }
 
 .knife-box {
@@ -90,15 +125,16 @@ li a:hover {
 }
 
 .knife-box p {
-  padding: 15px;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.box-galery H2 {
   text-align: center;
 }
 
-.galery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 300px);
-  gap: 10px;
-}
+
 
 /*galerie*/
