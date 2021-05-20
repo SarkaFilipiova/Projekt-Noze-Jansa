@@ -95,6 +95,10 @@ header {
 		border-bottom: 0;
 		border-right: 1px solid white;
 	}
+
+  .menu {
+    position: absolute;
+  }
 }
 /*menu*/
 
