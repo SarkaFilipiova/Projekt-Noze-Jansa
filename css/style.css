@@ -72,6 +72,8 @@ body {
 
 .menu__checkbox:checked ~ .menu-parts {
 	display: block;
+  background-color:rgba(228, 214, 214, 0.5);
+  color: white;
 }
 
 
@@ -91,7 +93,7 @@ body {
 }
 /*menu*/
 
-
+/*ikony*/
 .icon_pic {
   width: 30%;
 }
@@ -100,8 +102,8 @@ body {
   display: flex;
   margin-left: 0;
   padding-left: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .section_icons p {
@@ -114,6 +116,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/*ikony*/
 
 /*galerie*/
 .knife-box img {
@@ -140,6 +143,106 @@ body {
   text-align: center;
 }
 
+.galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
+  grid-auto-rows: 200px;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 2%;
+}
 
-
+.box-galery {
+  padding-bottom: 5%;
+}
+.knife-box {
+  background-color: red;
+}
 /*galerie*/
+
+/*srdicko*/
+
+.story img {
+  max-width: 50%;
+  max-height: 50%;
+  padding: 2%;
+  object-fit: cover;
+}
+
+.story-left {
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.story-right {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.story {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*srdicko*/
+
+/*výroba*/
+.production {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
+  grid-auto-rows: 200px;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.production-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.production-section H2 {
+  text-align: center;
+}
+
+.production-box p {
+  margin: 0;
+  text-align: center;
+}
+
+/*výroba*/
+
+/*reference*/
+
+.reference img {
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reference {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.reference-person {
+  max-width: 200px;
+}
+
+.reference-person p {
+  text-align: center;
+}
+
+/*reference*/
