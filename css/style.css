@@ -235,14 +235,63 @@ body {
   padding-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
+  justify-content: center;
 }
 
 .reference-person {
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .reference-person p {
   text-align: center;
 }
 
+.reference h2 {
+  text-align: center;
+}
+
 /*reference*/
+
+/*kontakt*/
+
+.contact {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+}
+
+.adress {
+  text-align: left;
+}
+/*kontakt*/
+
+/*formulář*/
+
+.form-inside input,
+.form-inside textarea,
+.form-inside select
+{
+	width: 100%;
+}
+
+.form-inside2 {
+  text-align: right;
+}
+
+/*formulář*/
+
+/*buttons*/
+
+.button-secondary {
+  font-size: 16px;
+  background-color: #D4D9DF;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+
+/*buttons*/

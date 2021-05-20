@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0495b04fe4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -27,6 +28,7 @@
                         <li class="menu_item"><a class="menu__link" href="/ma-filozofie">Má filozofie</a></li>
                         <li class="menu_item"><a class="menu__link" href="/reference">Reference</a></li>
                         <li class="menu_item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
+                        <i class="fab fa-instagram"></i>
                     </ul>
                 </nav>
             </div>
@@ -92,7 +94,7 @@
                 <p>Kiridashi</p>
             </div>
         </div>
-        <button type="button">Prohlédnout si nože</button>
+        <button class="button-secondary" type="button">Prohlédnout si nože</button>
     </div>
     <div class="story">
         <h2>Nože - výroba, kvalita, originalita, srdíčko</h2>
@@ -147,6 +149,7 @@
         </div>
     </div>
     <div class="reference">
+        <h2>Recerence od spokojených zákazníků</h2>
         <div class="reference-person">
             <img src="/images/chef-reference.png">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
@@ -163,7 +166,32 @@
             <img src="/images/chef-reference.png">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
         </div>
-
+    </div>
+    <div class="contact">
+        <div class="adress">
+            <h2>Kontakt</h2>
+            <p>René Jansa</p>
+            <a href="mailto:rene.jansa@tiscali.cz">rene.jansa@tiscali.cz</a>.<br>
+            <p>Česká Třebová</p>
+        </div>
+        <form class="form">
+            <h3>Neváhejte se mi ozvat pokud máte zájem o nůž, nebo si jen tak pokecat o řemeslu :)</h3>
+            <div class="form-inside">
+                <label for="name">Jméno a příjmení</label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div class="form-inside">
+                <label for="textarea">Vaše zpráva</label><br>
+                <textarea class="textarea" id="textarea"></textarea><br>
+            </div>
+            <div class="form-inside2">	
+                <label for="checkbox">nejsem robot</label>
+                <input type="checkbox" name="ano" id="ano" value="ano"><br>
+            </div>
+            <div class="form-inside"><br>
+                <button class="button-secondary">Odeslat</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
