@@ -13,8 +13,8 @@ body {
   margin: 0;
 }
   
-.header {
-  background-image: url("/images/plachtak-uvod.jpg");
+header {
+  background-image: url("images/plachtak-uvod.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
