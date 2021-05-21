@@ -337,6 +337,8 @@ header {
 .contact {
   background-color: rgb(12, 12, 12);
   padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /*formulář*/
@@ -370,3 +372,12 @@ header {
 
 
 /*buttons*/
+
+/*footer*/
+
+footer {
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+/*footer*/
