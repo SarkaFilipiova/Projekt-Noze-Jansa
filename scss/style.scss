@@ -39,14 +39,43 @@ header {
 .header_h {
   color: $w;
   text-shadow: 0 0 4px black;
-  font-size: 10px;
+  font-size: 14px;
   padding-left: 2%;
   padding-bottom: 2%;
   display: flex;
   flex-direction: column;
 }
 
+
+
+header h1 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-parts li {
+    font-size: 16px;
+  }
+
+  .header {
+    background:
+      linear-gradient(to bottom, rgb(12, 12, 12) 0%, #00000000 20%),
+      linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
+      url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+  }
+}
+
 /*menu*/
+
+.logo {
+  padding-left: 2%;
+}
+
 .menu__checkbox {
 	position: absolute;
 	left: -99999px;
@@ -67,27 +96,34 @@ header {
   text-align: right;
   float: right;
   padding-right: 2%;
+  font-size: 30px;
 }
 
 .menu__item {
 	border-bottom: 1px solid $w;
 }
 
-.menu__link {
+.menu__link, .fab {
 	display: block;
 	padding: 15px;
 	text-decoration: none;
 	color: $w;
 }
 
+.fab {
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 16px;
+}
+
 .menu__link:hover {
-	background-color: $tmavas;
+	background-color: rgba(228, 214, 214, 0.5);
   color: $w;
 }
 
 .menu__checkbox:checked ~ .menu-parts {
 	display: block;
-  background-color:$tmavas;
+  background-color: rgba(228, 214, 214, 0.5);
   color: $w;
 }
 
@@ -122,16 +158,20 @@ header {
 .section_icons {
   display: flex;
   margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
+  padding-right: 0;
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: $b;
   margin-bottom: 0;
+  justify-content: space-around;
+
 }
 
 .section_icons p {
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   color: white;
 }
 
@@ -139,6 +179,13 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .section_icons {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /*ikony*/
@@ -220,7 +267,7 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   background-color: $b;
-  padding-top: 5%;
+  padding-top: 8%;
   padding-bottom: 5%;
 }
 
@@ -269,29 +316,34 @@ header {
   margin-right: auto;
 }
 
-.reference {
+.reference-box {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding-top: 10%;
-  padding-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
   justify-content: center;
+}
+
+.reference {
   background-color: $b;
+  padding-top: 10%;
+  padding-bottom: 5%;
 }
 
 .reference-person {
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .reference-person p {
   text-align: center;
   color: white;
+  font-size: 14px;
 }
 
 .reference h2 {
   text-align: center;
+  padding-bottom: 2%;
 }
 
 /*reference*/
@@ -343,6 +395,13 @@ header {
   padding-right: 5%;
 }
 
+@media screen and (min-width: 800px) {
+  .contact {
+    display: flex;
+    gap: 50px;
+  }
+}
+
 /*formulář*/
 
 /*buttons*/
@@ -380,7 +439,8 @@ header {
 footer {
   background-color: $b;
   color: $w;
-  padding-left: 20%;
+  padding-left: 2%;
+  padding-bottom: 2%;
 }
 
 /*footer*/
