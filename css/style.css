@@ -210,6 +210,16 @@ header h2 {
   justify-content: center;
 }
 
+.box-galery p {
+  color: white;
+  max-width: 800px;
+  text-align: center;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .box-galery {
   background-color: #0c0c0c;
   margin-top: 0;
@@ -401,6 +411,11 @@ header h2 {
 
 .box-galery .button-secondary {
   margin-top: 40px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /*buttons*/
