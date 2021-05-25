@@ -162,7 +162,7 @@ header h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   background-color: $b;
   margin-bottom: 0;
   justify-content: space-around;
@@ -216,6 +216,7 @@ header h2 {
 .box-galery H2 {
   text-align: center;
   color: $w;
+  margin-top: 0;
 }
 
 .galery {
@@ -275,8 +276,13 @@ header h2 {
   padding-left: 5%;
   padding-right: 5%;
   background-color: $b;
-  padding-top: 8%;
+  padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.story h2 {
+  margin-top: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -342,7 +348,7 @@ header h2 {
 
 .reference {
   background-color: $b;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
