@@ -262,6 +262,12 @@ header h2 {
   padding-bottom: 5%;
 }
 
+@media screen and (min-width: 800px) {
+  .story img {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 /*srdicko*/
 /*výroba*/
 .production {
@@ -399,14 +405,6 @@ header h2 {
   margin-right: 2%;
   color: white;
   cursor: pointer;
-}
-
-.button-secondary:hover {
-  font-size: 17px;
-}
-
-.button-secondary:active {
-  font-size: 15px;
 }
 
 .box-galery .button-secondary {

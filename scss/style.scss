@@ -279,6 +279,13 @@ header h2 {
   padding-bottom: 5%;
 }
 
+@media screen and (min-width: 800px) {
+  .story img {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 /*srdicko*/
 
 /*výroba*/

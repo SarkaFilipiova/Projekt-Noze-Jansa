@@ -4,5 +4,16 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
-   };
+    eleventyConfig.addPassthroughCopy("js");
    
+
+    return {
+       templateFormats: ["njk", "html", "md", "liquid"],
+   
+        markdownTemplateEngine: "njk",
+        htmlTemplateEngine: "njk",
+        dataTemplateEngine: "njk",
+
+
+    }
+};
