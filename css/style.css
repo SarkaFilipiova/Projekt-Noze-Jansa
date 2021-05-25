@@ -13,23 +13,13 @@ body {
   margin: 0;
 }
 
-/*
-header {
-  background-image: url("/images/plachtak-uvod.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  padding-bottom: 30%;
-  height: 400px;
-}
-*/
 .header {
   background: linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/plachtak-uvod.jpg") no-repeat center/cover;
 }
 
 header {
   display: grid;
-  gap: 25vh;
+  gap: 17vh;
 }
 
 .header_h {
@@ -58,6 +48,11 @@ header h2 {
 
   .header {
     background: linear-gradient(to bottom, #0c0c0c 0%, #00000000 20%), linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+  }
+
+  header {
+    display: grid;
+    gap: 30vh;
   }
 }
 /*menu*/
@@ -106,13 +101,13 @@ header h2 {
 }
 
 .menu__link:hover {
-  background-color: rgba(228, 214, 214, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 .menu__checkbox:checked ~ .menu-parts {
   display: block;
-  background-color: rgba(228, 214, 214, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -231,9 +226,9 @@ header h2 {
 /*galerie*/
 /*srdicko*/
 .story img {
-  max-width: 50%;
-  max-height: 50%;
-  padding: 2%;
+  width: 50%;
+  height: 50%;
+  max-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -243,6 +238,10 @@ header h2 {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.story-left img {
+  padding-right: 0;
+  padding-left: 2%;
+}
 
 .story-right {
   display: flex;
@@ -250,17 +249,32 @@ header h2 {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.story-right img {
+  padding-right: 2%;
+  padding-left: 0;
+}
 
-.story p, h2, h3 {
+.story p, h3, h2 {
   color: white;
 }
 
 .story {
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #0c0c0c;
   padding-top: 5%;
   padding-bottom: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2%;
+}
+
+.story {
+  background: linear-gradient(to bottom, #0c0c0c 0%, #00000000 20%), linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/moss-1.jpg") no-repeat center/cover;
 }
 
 .story h2 {
@@ -269,20 +283,21 @@ header h2 {
 }
 
 @media screen and (min-width: 800px) {
-  .story img {
-    padding-left: 10%;
-    padding-right: 10%;
+  .story {
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 }
 /*srdicko*/
 /*výroba*/
 .production {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
-  grid-auto-rows: 200px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
   padding-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .production-section {
@@ -308,6 +323,11 @@ header h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+  .production {
+    flex-wrap: nowrap;
+  }
+}
 /*výroba*/
 /*reference*/
 .reference img {
@@ -327,13 +347,14 @@ header h2 {
 }
 
 .reference {
-  background-color: #0c0c0c;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .reference-person {
   max-width: 250px;
+  padding-top: 2%;
 }
 
 .reference-person p {
@@ -353,6 +374,7 @@ header h2 {
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .adress {
@@ -386,7 +408,6 @@ header h2 {
 }
 
 .contact {
-  background-color: #0c0c0c;
   padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -396,8 +417,13 @@ header h2 {
   .contact {
     display: flex;
     gap: 50px;
+    justify-content: center;
   }
 }
+.contact-reference {
+  background: linear-gradient(to bottom, #0c0c0c 0%, #00000000 20%), linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/contact-background.jpg") no-repeat center/cover;
+}
+
 /*formulář*/
 /*buttons*/
 .button-secondary {
