@@ -318,7 +318,7 @@ header h2 {
 /*výroba*/
 .production {
   display: grid;
-  grid-template-columns: repeat(4, minmax(50px, 300px));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
   grid-auto-rows: 200px;
   gap: 40px;
   justify-content: center;
@@ -352,6 +352,26 @@ header h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  .production {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
+    grid-auto-rows: 200px;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .production {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 300px));
+    grid-auto-rows: 200px;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+}
 /*výroba*/
 /*reference*/
 .reference img {
