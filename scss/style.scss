@@ -7,7 +7,7 @@ $svetlas: #E0E5E9;
 $tmavas: #D4D9DF;
 $hneda: #432F23;
 $w: white;
-$b: rgb(12, 12, 12);
+$b: rgb(12, 11, 11);
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -17,32 +17,37 @@ body {
 
 .header {
   background:
+    linear-gradient(to bottom, rgb(12, 12, 12) 0%, #00000000 20%),
     linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
     url("/images/plachtak-uvod.jpg") no-repeat center/cover;
 }
 
 header {
   display: grid;
-  gap: 17vh;
+  height: 40vh;
 }
 
 .header_h {
   color: $w;
   text-shadow: 0 0 4px black;
-  font-size: 14px;
   padding-left: 2%;
   padding-bottom: 2%;
   display: flex;
   flex-direction: column;
 }
 
+.header_menu {
+  padding-top: 2%;
+  background-color: $b;
+}
+
 header h1 {
-  font-size: 25px;
-  margin-bottom: 0;
+  font-size: 22px;
+  padding-top: 25vh;
 }
 
 header h2 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media screen and (min-width: 800px) {
@@ -59,7 +64,15 @@ header h2 {
 
   header {
     display: grid;
-    gap: 30vh;
+    height: 50vh;
+    align-self: end;
+  }
+
+
+
+  header h1 {
+    font-size: 25px;
+    padding-top: 30vh;
   }
 }
 
@@ -67,6 +80,15 @@ header h2 {
 
 .logo {
   padding-left: 2%;
+  margin: 0;
+  padding-bottom: 0;
+  color: $w;
+  font-weight: Semi-bold 600;
+  font-size: 40px;
+}
+
+.logo-box h1 {
+  margin: 0;
 }
 
 .menu__checkbox {
@@ -82,14 +104,16 @@ header h2 {
 	background-color: transparent;
   text-align: center;
   padding-bottom: 15px;
+  padding-top: 40px;
 }
 
 .menu__toggler {
   color: $w;
   text-align: right;
   float: right;
-  padding-right: 2%;
+  padding-right: 10px;
   font-size: 30px;
+  padding-top: 10px;
 }
 
 .menu__item {
@@ -126,19 +150,26 @@ header h2 {
   right: 10px;
 }
 
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 900px) {
 	.menu__toggler {
 		display: none;
 	}
 
 	.menu-parts {
 		display:flex !important;
+    padding-top: 27px;
 	}
 
 	.menu__item {
 		border-bottom: 0;
 		border-right: 1px solid $w;
 	}
+
+  .header_menu {
+    background-color: $b;
+  }
 }
 
 /*menu*/
@@ -155,8 +186,8 @@ header h2 {
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 5%;
-  padding-bottom: 2%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: $b;
   margin-bottom: 0;
   justify-content: space-around;
@@ -276,8 +307,8 @@ header h2 {
 .story {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -312,18 +343,21 @@ header h2 {
 /*výroba*/
 
 .production {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 300px));
+  grid-auto-rows: 200px;
   gap: 40px;
   justify-content: center;
   padding-bottom: 5%;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .production-section {
   background-color: $b;
   padding-top: 2%;
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .production-box img {
@@ -341,12 +375,6 @@ header h2 {
 .production-box p {
   margin: 0;
   text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-  .production {
-    flex-wrap: nowrap;
-  }
 }
 
 /*výroba*/
@@ -370,9 +398,9 @@ header h2 {
 }
 
 .reference {
-  padding-top: 5%;
-  padding-bottom: 5%;
   background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .reference-person {
@@ -442,6 +470,22 @@ header h2 {
   padding-right: 5%;
 }
 
+.contact-page {
+  background:
+  linear-gradient(to bottom, rgb(12, 12, 12) 0%, #00000000 20%),
+  linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
+  url("/images/background-c.jpg") no-repeat center/cover;
+  padding-bottom: 50%;
+}
+
+.reference-page {
+  background:
+  linear-gradient(to bottom, rgb(12, 12, 12) 0%, #00000000 20%),
+  linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
+  url("/images/background-c.jpg") no-repeat center/cover;
+  padding-bottom: 20%;
+}
+
 @media screen and (min-width: 800px) {
   .contact {
     display: flex;
@@ -452,9 +496,9 @@ header h2 {
 
 .contact-reference {
   background:
-      linear-gradient(to bottom, rgb(12, 12, 12) 0%, #00000000 20%),
+      linear-gradient(to bottom, rgb(28, 25, 25) 0%, #00000000 20%),
       linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
-      url("/images/contact-background.jpg") no-repeat center/cover;
+      url("/images/background-c.jpg") no-repeat center/cover;
 }
 
 /*formulář*/
