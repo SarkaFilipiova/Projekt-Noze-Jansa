@@ -517,4 +517,8 @@ footer {
   grid-row: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+
+.plus-background {
+  padding-bottom: 300px;
 }/*# sourceMappingURL=style.css.map */
