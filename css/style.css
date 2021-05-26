@@ -512,4 +512,9 @@ footer {
   padding-top: 2%;
 }
 
-/*footer*//*# sourceMappingURL=style.css.map */
+/*footer*/
+.vyska {
+  grid-row: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}/*# sourceMappingURL=style.css.map */
